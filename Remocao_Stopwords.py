@@ -28,7 +28,7 @@ texto = arquivo.readlines()
 basetoken = []
 stop_words = set(stopwords.words('portuguese'))
 
-#stop_words.update(('','http','and','I','A','And','So','arnt','This','When','It','many','Many','so','cant','Yes','yes','No','no','These','these'))
+stop_words.update(('http','https'))
 
 #print(stop_words)
 
