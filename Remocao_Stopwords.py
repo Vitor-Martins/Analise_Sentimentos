@@ -3,6 +3,8 @@
 Spyder Editor
 
 Este é um arquivo de script temporário.
+
+@author: Vitor Martins
 """
 import nltk
 from nltk.corpus import stopwords
@@ -44,7 +46,7 @@ conteudo = arquivo.readlines()
 for linha in basetoken:
     myString = " ".join(linha)      
     #print (basetoken)
-    conteudo.append(myString)   # insira seu conteúdo
+    conteudo.append(myString + '\n')   # insira seu conteúdo
     arquivo = open('./pre-processamento.txt', 'w') # Abre novamente o arquivo (escrita)
     arquivo.writelines(conteudo)    # escreva o conteúdo criado anteriormente nele.
 arquivo.close() # Escrever um arquivo substituindo tudo
